@@ -13,37 +13,37 @@
 
     测试lib类库里的java类
 
-    假设lib类库里包级私有接口名为IA,里面有包级私有的内部接口IAInter
+    假设lib类库里包级私有接口名为IA,里面有包级私有的内部接口IAInner
 
-    假设IA的public可见域的实现类名为AImpl,里面有包级私有的内部接口AImplInter
+    假设IA的public可见域的实现类名为AImpl,里面有包级私有的内部接口AImplInner
 
 **测试步骤一:**
 
-    1.app类中的Java类能否引用lib类库里AImpl继承下来的IAInter和AImpl自己的AImplInter
+    1.app类中的Java类能否引用lib类库里AImpl继承下来的IAInner和AImpl自己的AImplInner
 
-    2.app类中的Kotlin类能否引用lib类库里AImpl继承下来的IAInter和AImpl自己的AImplInter
+    2.app类中的Kotlin类能否引用lib类库里AImpl继承下来的IAInner和AImpl自己的AImplInner
 
-    3.app类中的Java类能否改变lib类库里IA和IAInter的可见域和AImpl自己的AImplInter可见域
+    3.app类中的Java类能否改变lib类库里IA和IAInner的可见域和AImpl自己的AImplInner可见域
 
-    4.app类中的Kotlin类能否改变lib类库里IA和IAInter的可见域和AImpl自己的AImplInter可见域
+    4.app类中的Kotlin类能否改变lib类库里IA和IAInner的可见域和AImpl自己的AImplInner可见域
 
 **测试内容二:**
 
     测试lib类库里的kotlin类
 
-    假设lib类库里模块级私有接口名为IA,里面有模块级私有的内部接口IAInter
+    假设lib类库里模块级私有接口名为IA,里面有模块级私有的内部接口IAInner
 
-    假设IA的public可见域(kotlin默认)的实现类名为AImpl,里面有模块级私有的内部接口AImplInter
+    假设IA的public可见域(kotlin默认)的实现类名为AImpl,里面有模块级私有的内部接口AImplInner
 
 **测试步骤二:**
 
-    5.app类中的Java类能否引用lib类库里的IA和IAInter和AImpl自己的AImplInter
+    5.app类中的Java类能否引用lib类库里的IA和IAInner和AImpl自己的AImplInner
 
-    6.app类中的Kotlin类能否引用lib类库里AImpl继承下来的IAInter和AImpl自己的AImplInter
+    6.app类中的Kotlin类能否引用lib类库里AImpl继承下来的IAInner和AImpl自己的AImplInner
 
-    7.app类中的Java类能否改变lib类库里IA和IAInter的可见域和AImpl自己的AImplInter可见域
+    7.app类中的Java类能否改变lib类库里IA和IAInner的可见域和AImpl自己的AImplInner可见域
 
-    8.app类中的Kotlin类能否改变lib类库里IA和IAInter的可见域和AImpl自己的AImplInter可见域
+    8.app类中的Kotlin类能否改变lib类库里IA和IAInner的可见域和AImpl自己的AImplInner可见域
 
 **测试结果:**
 
